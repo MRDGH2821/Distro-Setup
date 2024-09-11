@@ -10,7 +10,4 @@ sudo nala fetch --auto -y
 sudo nala install --update -y curl wget git ca-certificates
 
 # Clone Distro Setup repository
-mkdir -p ~/Github
-cd ~/GitHub/ || exit
-
-git clone https://github.com/MRDGH2821/Distro-Setup
+git clone https://github.com/MRDGH2821/Distro-Setup ~/Github/Distro-Setup
