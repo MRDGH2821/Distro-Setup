@@ -1,6 +1,6 @@
 # Deb Packages
 
-Packages & Apps for Debian based distros
+Packages & Apps for Debian based distros.
 
 ## Prerequisite
 
@@ -12,7 +12,8 @@ Install [Nala](https://gitlab.com/volian/nala/-/wikis/Installation) frontend for
 curl https://gitlab.com/volian/volian-archive/-/raw/main/install-nala.sh | bash
 ```
 
-_note: Ubuntu 20.04, 22.04 and Debian Bullseye this script may fail. If it does run_
+_Note: Ubuntu 20.04, 22.04 and Debian Bullseye this script may fail._
+_If it does run:_
 
 ```bash
 sudo apt install -t nala nala
@@ -34,7 +35,6 @@ Apps present in [install-apps.sh](./install-apps.sh)
 | App                                                                                                      | Notes                                              |
 | -------------------------------------------------------------------------------------------------------- | -------------------------------------------------- |
 | [KeePassXC](https://keepassxc.org/download/#linux)                                                       | Use Ubuntu PPA method to install                   |
-| [Zed Editor](https://zed.dev/download)                                                                   |                                                    |
 | [Firefox](https://support.mozilla.org/en-US/kb/install-firefox-linux)                                    | Use the method in which you add PPA                |
 | [Visual Studio Code](https://code.visualstudio.com/docs/?dv=linux64_deb)                                 |                                                    |
 | [Gramps](https://gramps-project.org/wiki/index.php/Installing_Gramps_for_Linux_computers#Debian_package) | Install gir1.2-goocanvas-2.0 for graph view plugin |
@@ -48,11 +48,10 @@ Apps present in [install-apps.sh](./install-apps.sh)
 
 ### CLI Apps
 
-| App                                                             | Notes                                                                                                         |
-| --------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| [FastFetch](https://github.com/fastfetch-cli/fastfetch)         |                                                                                                               |
-| [Oh My Posh] (https://ohmyposh.dev/docs/installation/linux)     | Configure random theme loader from [here](https://gist.github.com/MRDGH2821/614a6e8c7e0a6a73dbd7f2f7be07bf93) |
-| [Docker Engine](https://docs.docker.com/engine/install/ubuntu/) |                                                                                                               |
+| App                                                             | Notes |
+| --------------------------------------------------------------- | ----- |
+| [FastFetch](https://github.com/fastfetch-cli/fastfetch)         |       |
+| [Docker Engine](https://docs.docker.com/engine/install/ubuntu/) |       |
 
 ## Non-free Apps
 

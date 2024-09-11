@@ -8,9 +8,9 @@ These apps should run without much problem in any distro.
 | App                                                                                  | Package name                                   | Notes                                           |
 | ------------------------------------------------------------------------------------ | ---------------------------------------------- | ----------------------------------------------- |
 | [Saber](https://flathub.org/apps/com.adilhanney.saber)                               | com.adilhanney.saber                           | Handwriting based note taking app               |
-| [Ludusavi](https://flathub.org/apps/com.github.mtkennerly.ludusavi)                  | com.github.mtkennerly.ludusavi                 | Game saves bakup manager                        |
-| [Heroic Games Launcher](https://flathub.org/apps/ com.heroicgameslauncher.hgl )      | com.heroicgameslauncher.hgl                    | Opensource Launcher for GOG, EGS & Amazon Games |
-| [Gear Lever](https://flathub.org/apps/ it.mijorus.gearlever)                         | it.mijorus.gearlever                           | AppImage manager                                |
+| [Ludusavi](https://flathub.org/apps/com.github.mtkennerly.ludusavi)                  | com.github.mtkennerly.ludusavi                 | Game saves backup manager                       |
+| [Heroic Games Launcher](https://flathub.org/apps/com.heroicgameslauncher.hgl)        | com.heroicgameslauncher.hgl                    | Opensource Launcher for GOG, EGS & Amazon Games |
+| [Gear Lever](https://flathub.org/apps/it.mijorus.gearlever)                          | it.mijorus.gearlever                           | AppImage manager                                |
 | [Gamescope](https://flathub.org/apps/org.freedesktop.Platform.VulkanLayer.gamescope) | org.freedesktop.Platform.VulkanLayer.gamescope | Wayland compositor for games                    |
 
 ### Optional Apps
