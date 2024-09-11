@@ -24,6 +24,7 @@ else
   echo $LINE
 
   # Post Install - Configure Oh My Posh
-  curl -s https://gist.github.com/MRDGH2821/47294f0c61f3c9f061e8ffd28e1a538b/raw/oh-my-posh-random.sh >>~/.bashrc
+
+  echo "eval \"$(oh-my-posh init bash --config "$(shuf -n 1 ~/.cache/oh-my-posh/themes/*.json)")\"" >>~/.bashrc
   oh-my-posh font install Meslo
 fi
