@@ -46,12 +46,13 @@ Apps present in [install-apps.sh](./install-apps.sh)
 
 ### CLI Apps
 
-| App                                                                       | Notes                    |
-| ------------------------------------------------------------------------- | ------------------------ |
-| [Docker Engine](https://docs.docker.com/engine/install/ubuntu/)           |                          |
-| [FastFetch](https://github.com/fastfetch-cli/fastfetch)                   |                          |
-| [GitHub CLI](https://github.com/cli/cli/blob/trunk/docs/install_linux.md) |                          |
-| [Python 3](https://www.python.org/downloads/)                             | Install pip & venv both. |
+| App                                                                                              | Notes                    |
+| ------------------------------------------------------------------------------------------------ | ------------------------ |
+| [Docker Engine](https://docs.docker.com/engine/install/ubuntu/)                                  |                          |
+| [FastFetch](https://github.com/fastfetch-cli/fastfetch)                                          |                          |
+| [GitHub CLI](https://github.com/cli/cli/blob/trunk/docs/install_linux.md)                        |                          |
+| [OneDrive CLI](https://github.com/abraunegg/onedrive/blob/master/docs/ubuntu-package-install.md) | Step are OS Specific     |
+| [Python 3](https://www.python.org/downloads/)                                                    | Install pip & venv both. |
 
 ## Non-free Apps
 
