@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+set -e
 
 sudo nala install --update -y -o APT::Get::AllowUnauthenticated=true \
   "https://release.gitkraken.com/linux/gitkraken-amd64.deb" \

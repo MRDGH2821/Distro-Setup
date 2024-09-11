@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+set -e
 LINE="-------------------------------------------"
 
 function nala_install {
