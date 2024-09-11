@@ -1,0 +1,22 @@
+{
+  "allowCompoundWords": true,
+  "caseSensitive": false,
+  "useGitignore": true,
+  "words": [
+    "adilhanney",
+    "distro",
+    "distros",
+    "flatpak",
+    "goocanvas",
+    "grsync",
+    "kamoso",
+    "kleopatra",
+    "ludusavi",
+    "mijorus",
+    "mtkennerly",
+    "nala",
+    "skanlite",
+    "skanpage",
+    "tchx"
+  ]
+}
