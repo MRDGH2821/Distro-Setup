@@ -5,7 +5,8 @@ flatpak install -y \
   com.github.mtkennerly.ludusavi \
   com.heroicgameslauncher.hgl \
   it.mijorus.gearlever \
-  org.freedesktop.Platform.VulkanLayer.gamescope/x86_64/24.08
+  org.freedesktop.Platform.VulkanLayer.gamescope/x86_64/24.08 \
+  org.libreoffice.LibreOffice
 
 # Install optional apps
 if [ "$1" == "--install-optional" ]; then
