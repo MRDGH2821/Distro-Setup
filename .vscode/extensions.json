@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "bennycode.sort-everything",
+    "christian-kohler.path-intellisense",
+    "eamodio.gitlens",
+    "esbenp.prettier-vscode",
+    "formulahendry.code-runner",
+    "foxundermoon.shell-format",
+    "michaelcurrin.auto-commit-msg",
+    "redhat.vscode-yaml",
+    "spmeesseman.vscode-taskexplorer",
+    "streetsidesoftware.code-spell-checker",
+    "vivaxy.vscode-conventional-commits"
+  ]
+}
