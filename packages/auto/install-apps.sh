@@ -19,5 +19,5 @@ echo $LINE
 # Post Install
 
 ## Configure Oh My Posh
-curl -s https://gist.githubusercontent.com/MRDGH2821/47294f0c61f3c9f061e8ffd28e1a538b/raw/6ba2e9436e5ef3b341485bbd3ac12678d650444a/oh-my-posh-random.sh >>~/.bashrc
+curl -s https://gist.github.com/MRDGH2821/47294f0c61f3c9f061e8ffd28e1a538b/raw/oh-my-posh-random.sh >>~/.bashrc
 oh-my-posh font install Meslo
