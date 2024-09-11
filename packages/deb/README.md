@@ -46,10 +46,11 @@ Apps present in [install-apps.sh](./install-apps.sh)
 
 ### CLI Apps
 
-| App                                                             | Notes |
-| --------------------------------------------------------------- | ----- |
-| [Docker Engine](https://docs.docker.com/engine/install/ubuntu/) |       |
-| [FastFetch](https://github.com/fastfetch-cli/fastfetch)         |       |
+| App                                                                       | Notes |
+|---------------------------------------------------------------------------|-------|
+| [Docker Engine](https://docs.docker.com/engine/install/ubuntu/)           |       |
+| [FastFetch](https://github.com/fastfetch-cli/fastfetch)                   |       |
+| [GitHub CLI](https://github.com/cli/cli/blob/trunk/docs/install_linux.md) |       |
 
 ## Non-free Apps
 
