@@ -44,6 +44,7 @@ sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyring
 sudo chmod a+r /etc/apt/keyrings/docker.asc
 
 ### Add the repository to Apt sources:
+# shellcheck disable=SC1091
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu $(. /etc/os-release && echo "$UBUNTU_CODENAME") stable" | sudo tee /etc/apt/sources.list.d/docker.list >/dev/null
 
 # Install Packages
@@ -73,7 +74,7 @@ nala_install \
 sudo aa-disable /etc/apparmor.d/usr.bin.firefox
 
 ## Configure Oh My Posh
-curl -s https://gist.githubusercontent.com/MRDGH2821/47294f0c61f3c9f061e8ffd28e1a538b/raw/6ba2e9436e5ef3b341485bbd3ac12678d650444a/oh-my-posh-random.sh >> ~/.bashrc
+curl -s https://gist.githubusercontent.com/MRDGH2821/47294f0c61f3c9f061e8ffd28e1a538b/raw/6ba2e9436e5ef3b341485bbd3ac12678d650444a/oh-my-posh-random.sh >>~/.bashrc
 oh-my-posh font install Meslo
 
 ## Allow management of Docker as a non-root user
