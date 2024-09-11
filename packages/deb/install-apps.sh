@@ -50,6 +50,7 @@ sudo add-apt-repository ppa:zhangsongcui3371/fastfetch -y
 # Install Packages
 echo "Installing Packages"
 nala_install \
+  apparmor-utils \
   containerd.io \
   docker-buildx-plugin \
   docker-ce \
