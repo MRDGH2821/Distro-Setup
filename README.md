@@ -1,6 +1,8 @@
 # Distro-Setup
 
-This repository contains files & folders to be reinstalled after switching/reinstalling linux based OS
+This repository contains files & folders to be reinstalled after switching/reinstalling linux based OS.
+
+[Related](https://dotfiles.github.io)
 
 ## Steps to run
 
