@@ -44,24 +44,7 @@ sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyring
 sudo chmod a+r /etc/apt/keyrings/docker.asc
 
 ### Add the repository to Apt sources:
-echo \
-  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
-  $(. /etc/os-release && echo "$UBUNTU_CODENAME") stable" | \
-  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-
-# Self Install
-echo "Installing Self Installing apps"
-echo $LINE
-
-## Zed Editor
-echo "Installing Zed Editor"
-curl -f https://zed.dev/install.sh | sh
-echo $LINE
-
-## Oh My Posh
-echo "Installing Oh My Posh"
-curl -s https://ohmyposh.dev/install.sh | bash -s
-echo $LINE
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu $(. /etc/os-release && echo "$UBUNTU_CODENAME") stable" | sudo tee /etc/apt/sources.list.d/docker.list >/dev/null
 
 # Install Packages
 echo "Installing Packages"
