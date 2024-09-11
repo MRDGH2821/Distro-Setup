@@ -22,10 +22,8 @@ sudo apt install -t nala nala
 ### Clone Repo
 
 ```bash
-mkdir -p ~/Github
-cd ~/GitHub/
 sudo nala install --update -y git
-git clone https://github.com/MRDGH2821/Distro-Setup
+git clone https://github.com/MRDGH2821/Distro-Setup ~/GitHub/Distro-Setup
 ```
 
 ## Apps
