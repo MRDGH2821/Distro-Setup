@@ -33,3 +33,4 @@ Other optional apps
 | ----------------------------------------------------------------- | ---------------------------- | ------------------------------ |
 | [Marktext](https://flathub.org/apps/com.github.marktext.marktext) | com.github.marktext.marktext | Markdown based note taking app |
 | [Calibre](https://flathub.org/apps/com.calibre_ebook.calibre)     | com.calibre_ebook.calibreV   | EBook library manager          |
+| [Flatseal](https://flathub.org/apps/com.github.tchx84.Flatseal)   | com.github.tchx84.Flatseal   | Flatpak permission manager     |
