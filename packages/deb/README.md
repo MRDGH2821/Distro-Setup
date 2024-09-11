@@ -66,13 +66,16 @@ Non-free Apps present in [install-non-free.sh](./install-non-free.sh)
 
 Apps present in [install-kde-apps.sh](./install-kde-apps.sh)
 
-| App                                                             | Notes |
-| --------------------------------------------------------------- | ----- |
-| [Kamoso](https://apps.kde.org/kamoso/)                          |       |
-| [Filelight](https://apps.kde.org/filelight/)                    |       |
-| [KDE Partition Manager](https://apps.kde.org/partitionmanager/) |       |
-| [KCalc](https://apps.kde.org/kcalc/)                            |       |
-| [Kleopatra](https://apps.kde.org/kleopatra/)                    |       |
+| App                                                             | Notes                          |
+| --------------------------------------------------------------- | ------------------------------ |
+| [Kamoso](https://apps.kde.org/kamoso/)                          |                                |
+| [Filelight](https://apps.kde.org/filelight/)                    |                                |
+| [KDE Partition Manager](https://apps.kde.org/partitionmanager/) |                                |
+| [KCalc](https://apps.kde.org/kcalc/)                            |                                |
+| [Kleopatra](https://apps.kde.org/kleopatra/)                    |                                |
+| [NeoChat](https://flathub.org/apps/org.kde.neochat)             | Matrix Client                  |
+| [Skanpage](https://flathub.org/apps/org.kde.skanpage)           | Scanner app                    |
+| [Marknote](https://flathub.org/apps/org.kde.marknote)           | Markdown based note taking app |
 
 ### Optional KDE Apps
 

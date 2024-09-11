@@ -9,14 +9,17 @@ function nala_install {
 
 nala_install \
   filelight \
+  kalc \
   kamoso \
+  marknote \
+  neochat \
   partitionmanager \
-  kalc
+  skanpage
 
 # Install Optional Apps
 
 if [ "$1" == "--install-optional" ]; then
   nala_install \
-    grsync \
+    kbackup \
     skanlite
 fi

@@ -22,14 +22,3 @@ Other optional apps
 | [Marktext](https://flathub.org/apps/com.github.marktext.marktext) | com.github.marktext.marktext | Markdown based note taking app |
 | [Calibre](https://flathub.org/apps/com.calibre_ebook.calibre)     | com.calibre_ebook.calibreV   | EBook library manager          |
 | [Flatseal](https://flathub.org/apps/com.github.tchx84.Flatseal)   | com.github.tchx84.Flatseal   | Flatpak permission manager     |
-
-## KDE Apps
-
-Apps present in [install-kde-apps.sh](./install-kde-apps.sh)
-These will work best in KDE. Should work properly in other desktop environments but your mileage may wary.
-
-| App                                                   | Package name     | Notes                          |
-| ----------------------------------------------------- | ---------------- | ------------------------------ |
-| [NeoChat](https://flathub.org/apps/org.kde.neochat)   | org.kde.neochat  | Matrix Client                  |
-| [Skanpage](https://flathub.org/apps/org.kde.skanpage) | org.kde.skanpage | Scanner app                    |
-| [Marknote](https://flathub.org/apps/org.kde.marknote) | org.kde.marknote | Markdown based note taking app |
