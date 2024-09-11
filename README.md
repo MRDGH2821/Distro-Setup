@@ -5,9 +5,19 @@ This repository contains files & folders to be reinstalled after switching/reins
 ## Steps to run
 
 ```bash
-sudo apt install curl
+sudo apt install curl git
 
-curl https://raw.githubusercontent.com/MRDGH2821/Distro-Setup/main/packages/preinstall-steps.sh | bash
+git clone https://github.com/MRDGH2821/Distro-Setup ~/GitHub/Distro-Setup
+cd ~/GitHub/Distro-Setup || exit
 
-curl https://raw.githubusercontent.com/MRDGH2821/Distro-Setup/main/packages/deb/install-prerequisite.sh | bash
+bash ./packages/preinstall-steps.sh
+
+bash ./auto/install-apps.sh
+
+bash ./deb/install-prerequisite.sh
+bash ./deb/install-apps.sh
+bash ./deb/install-non-free.sh
+bash ./deb/install-kde-apps.sh # If you want KDE apps
+
+bash ./flatpak/install-apps.sh
 ```
