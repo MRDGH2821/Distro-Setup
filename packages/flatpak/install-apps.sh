@@ -8,7 +8,7 @@ flatpak install \
   org.freedesktop.Platform.VulkanLayer.gamescope
 
 # Install optional apps
-if ["$1" == "--install-optional"]; then
+if [ "$1" == "--install-optional" ]; then
   flatpak install \
     com.github.marktext.marktext \
     com.calibre_ebook.calibre \

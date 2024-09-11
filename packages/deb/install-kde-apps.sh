@@ -3,7 +3,7 @@
 LINE="-------------------------------------------"
 
 function nala_install {
-  sudo nala install --update -y -o APT::Get::AllowUnauthenticated=true $@
+  sudo nala install --update -y -o APT::Get::AllowUnauthenticated=true "$@"
   echo $LINE
 }
 
@@ -15,7 +15,7 @@ nala_install \
 
 # Install Optional Apps
 
-if ["$1" == "--install-optional"]; then
+if [ "$1" == "--install-optional" ]; then
   nala_install \
     grsync \
     skanlite

@@ -5,7 +5,7 @@ LINE="-------------------------------------------"
 # Deb Installer
 
 function nala_install {
-  sudo nala install --update -y -o APT::Get::AllowUnauthenticated=true $@
+  sudo nala install --update -y -o APT::Get::AllowUnauthenticated=true "$@"
   echo $LINE
 }
 
@@ -95,12 +95,12 @@ oh-my-posh font install Meslo
 
 ## Allow management of Docker as a non-root user
 sudo groupadd docker
-sudo usermod -aG docker $USER
+sudo usermod -aG docker "$USER"
 newgrp docker
 
 # Install Optional Apps
 
-if ["$1" == "--install-optional"]; then
+if [ "$1" == "--install-optional" ]; then
   echo "Installing Optional Apps"
   echo $LINE
   nala_install \
