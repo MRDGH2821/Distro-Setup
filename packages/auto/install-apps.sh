@@ -24,7 +24,13 @@ else
   echo $LINE
 
   # Post Install - Configure Oh My Posh
+  # shellcheck disable=SC2016
+  echo '
+  # Oh my posh random theme initializer
 
-  echo "eval \"$(oh-my-posh init bash --config "$(shuf -n 1 ~/.cache/oh-my-posh/themes/*.json)")\"" >>~/.bashrc
+  # Set a random theme
+  themes=($(ls ~/.cache/oh-my-posh/themes/*.json))
+  eval "$(oh-my-posh init bash --config "${themes[$RANDOM % ${#themes[@]}]}")"
+  ' >>~/.bashrc
   oh-my-posh font install Meslo
 fi
