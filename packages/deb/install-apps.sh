@@ -12,10 +12,6 @@ function nala_install {
 # Add Repositories
 echo "Setting up repositories"
 
-## KeePassXC
-sudo add-apt-repository ppa:phoerious/keepassxc -y
-echo $LINE
-
 ## Firefox
 sudo install -d -m 0755 /etc/apt/keyrings
 wget -q https://packages.mozilla.org/apt/repo-signing-key.gpg -O- | sudo tee /etc/apt/keyrings/packages.mozilla.org.asc >/dev/null
@@ -29,12 +25,13 @@ Pin-Priority: 1000
 
 echo $LINE
 
+## KeePassXC
+sudo add-apt-repository ppa:phoerious/keepassxc -y
+echo $LINE
+
 ## Waydroid
 curl https://repo.waydro.id | sudo bash
 echo $LINE
-
-## Fastfetch
-sudo add-apt-repository ppa:zhangsongcui3371/fastfetch -y
 
 ## Docker Engine
 
@@ -47,19 +44,22 @@ sudo chmod a+r /etc/apt/keyrings/docker.asc
 # shellcheck disable=SC1091
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu $(. /etc/os-release && echo "$UBUNTU_CODENAME") stable" | sudo tee /etc/apt/sources.list.d/docker.list >/dev/null
 
+## Fastfetch
+sudo add-apt-repository ppa:zhangsongcui3371/fastfetch -y
+
 # Install Packages
 echo "Installing Packages"
 nala_install \
-  gir1.2-goocanvas-2.0 \
-  keepassxc \
-  firefox \
-  waydroid \
-  fastfetch \
-  docker-ce \
-  docker-ce-cli \
   containerd.io \
   docker-buildx-plugin \
-  docker-compose-plugin
+  docker-ce \
+  docker-ce-cli \
+  docker-compose-plugin \
+  fastfetch \
+  firefox \
+  gir1.2-goocanvas-2.0 \
+  keepassxc \
+  waydroid
 
 # Install from URL
 echo "Installing from URLs"

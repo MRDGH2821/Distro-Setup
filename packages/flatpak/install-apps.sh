@@ -10,7 +10,7 @@ flatpak install \
 # Install optional apps
 if [ "$1" == "--install-optional" ]; then
   flatpak install \
-    com.github.marktext.marktext \
     com.calibre_ebook.calibre \
+    com.github.marktext.marktext \
     com.github.tchx84.Flatseal
 fi
