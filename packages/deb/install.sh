@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
-bash ./install-prerequisite.sh
-bash ./install-apps.sh --install-optional
-bash ./install-non-free.sh --install-optional
-bash ./install-kde-apps.sh --install-optional
+SCRIPT_DIR=$(dirname "${BASH_SOURCE[0]}")
+
+bash "$SCRIPT_DIR"/install-prerequisite.sh
+bash "$SCRIPT_DIR"/install-apps.sh --install-optional
+bash "$SCRIPT_DIR"/install-non-free.sh --install-optional
+bash "$SCRIPT_DIR"/install-kde-apps.sh --install-optional

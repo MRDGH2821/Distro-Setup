@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
-bash ./preinstall-steps.sh
-bash ./auto/install-apps.sh
-bash ./deb/install.sh
-bash ./flatpak/install-apps.sh
+SCRIPT_DIR=$(dirname "${BASH_SOURCE[0]}")
+
+bash "$SCRIPT_DIR"/preinstall-steps.sh
+bash "$SCRIPT_DIR"/auto/install-apps.sh
+bash "$SCRIPT_DIR"/deb/install.sh
+bash "$SCRIPT_DIR"/flatpak/install-apps.sh
