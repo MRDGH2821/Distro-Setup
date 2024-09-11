@@ -60,14 +60,23 @@ nala_install \
   firefox \
   gir1.2-goocanvas-2.0 \
   keepassxc \
+  language-pack-gnome-en \
   waydroid
 
 # Install from URL
 echo "Installing from URLs"
 echo $LINE
-nala_install \
-  "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64" \
-  "https://github.com/gramps-project/gramps/releases/download/v5.2.3/gramps_5.2.3-1_all.ubuntu-22.04.deb"
+if command -v code &>/dev/null; then
+  echo "VSCode is already installed. Skipping"
+else
+  nala_install "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64"
+fi
+
+if command -v gramps &>/dev/null; then
+  echo "Gramps is already installed. Skipping"
+else
+  nala_install "https://github.com/gramps-project/gramps/releases/download/v5.2.3/gramps_5.2.3-1_all.ubuntu-22.04.deb"
+fi
 
 # Post install
 

@@ -7,17 +7,23 @@ echo "Installing Auto Installing apps"
 echo $LINE
 
 ## Zed Editor
-echo "Installing Zed Editor"
-curl -f https://zed.dev/install.sh | sh
-echo $LINE
+if command -v zed &>/dev/null; then
+  echo "Zed is already installed. Skipping"
+else
+  echo "Installing Zed Editor"
+  curl -f https://zed.dev/install.sh | sh
+  echo $LINE
+fi
 
 ## Oh My Posh
-echo "Installing Oh My Posh"
-curl -s https://ohmyposh.dev/install.sh | bash -s
-echo $LINE
+if command -v oh-my-posh &>/dev/null; then
+  echo "Oh My Posh is already installed. Skipping"
+else
+  echo "Installing Oh My Posh"
+  curl -s https://ohmyposh.dev/install.sh | bash -s
+  echo $LINE
 
-# Post Install
-
-## Configure Oh My Posh
-curl -s https://gist.github.com/MRDGH2821/47294f0c61f3c9f061e8ffd28e1a538b/raw/oh-my-posh-random.sh >>~/.bashrc
-oh-my-posh font install Meslo
+  # Post Install - Configure Oh My Posh
+  curl -s https://gist.github.com/MRDGH2821/47294f0c61f3c9f061e8ffd28e1a538b/raw/oh-my-posh-random.sh >>~/.bashrc
+  oh-my-posh font install Meslo
+fi

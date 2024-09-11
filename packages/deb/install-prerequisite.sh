@@ -2,8 +2,12 @@
 set -e
 
 # Install Nala
-curl https://gitlab.com/volian/volian-archive/-/raw/main/install-nala.sh | bash
-sudo apt install -t nala nala
+if command -v code &>/dev/null; then
+  echo "Nala is already installed. Skipping"
+else
+  curl https://gitlab.com/volian/volian-archive/-/raw/main/install-nala.sh | bash
+  sudo apt install -t nala nala
+fi
 
 # Setup Nala
 sudo nala fetch --auto -y
