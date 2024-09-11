@@ -1,4 +1,10 @@
 #!/usr/bin/env bash
+set -e
+
+mkdir -p "$HOME"/.local/bin
+echo "export PATH=$HOME/.local/bin:$PATH" >>~/.bashrc
+
+export PATH=$HOME/.local/bin:$PATH
 
 SCRIPT_DIR=$(dirname "${BASH_SOURCE[0]}")
 
