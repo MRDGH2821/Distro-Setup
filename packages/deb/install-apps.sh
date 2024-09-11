@@ -13,7 +13,7 @@ function nala_install {
 echo "Setting up repositories"
 
 ## KeePassXC
-sudo add-apt-repository ppa:phoerious/keepassxc
+sudo add-apt-repository ppa:phoerious/keepassxc -y
 echo $LINE
 
 ## Firefox
@@ -34,7 +34,7 @@ curl https://repo.waydro.id | sudo bash
 echo $LINE
 
 ## Fastfetch
-sudo add-apt-repository ppa:zhangsongcui3371/fastfetch
+sudo add-apt-repository ppa:zhangsongcui3371/fastfetch -y
 
 ## Docker Engine
 
