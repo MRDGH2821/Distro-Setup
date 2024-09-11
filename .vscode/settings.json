@@ -5,6 +5,9 @@
   "[markdown]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
   "conventionalCommits.scopes": ["vscode"],
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "git.enableCommitSigning": true
