@@ -42,8 +42,23 @@ if command -v fnm &>/dev/null; then
 else
   curl -fsSL https://fnm.vercel.app/install | bash
 
-  # shellcheck disable=SC1090
-  source ~/.bashrc
+  # Post Install - Configure Fast Node Manager
+
+  if [ -d "$HOME/.fnm" ]; then
+    INSTALL_DIR="$HOME/.fnm"
+  elif [ -n "$XDG_DATA_HOME" ]; then
+    INSTALL_DIR="$XDG_DATA_HOME/fnm"
+  elif [ "$OS" = "Darwin" ]; then
+    INSTALL_DIR="$HOME/Library/Application Support/fnm"
+  else
+    INSTALL_DIR="$HOME/.local/share/fnm"
+
+    FNM_PATH="$INSTALL_DIR"
+    if [ -d "$FNM_PATH" ]; then
+      export PATH="$FNM_PATH:$PATH"
+      eval "$(fnm env)"
+    fi
+  fi
 fi
 
 if command -v node &>/dev/null; then
