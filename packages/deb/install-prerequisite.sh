@@ -11,7 +11,7 @@ fi
 
 # Setup Nala
 sudo nala fetch --auto -y --https-only --non-free
-sudo nala install --update -y curl wget git ca-certificates
+sudo nala install --update -y curl wget git ca-certificates libfuse2 gnupg2
 
 # Clone Distro Setup repository
 git clone https://github.com/MRDGH2821/Distro-Setup ~/GitHub/Distro-Setup
