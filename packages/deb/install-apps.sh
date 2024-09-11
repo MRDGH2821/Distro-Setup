@@ -68,6 +68,9 @@ nala_install \
   gir1.2-goocanvas-2.0 \
   keepassxc \
   language-pack-gnome-en \
+  python3 \
+  python3-pip \
+  python3-venv \
   waydroid
 
 # Install from URL
