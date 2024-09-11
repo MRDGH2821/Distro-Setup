@@ -12,6 +12,7 @@ cd ~/GitHub/Distro-Setup || exit
 
 bash ./packages/preinstall-steps.sh
 
+cd ./packages
 bash ./auto/install-apps.sh
 
 bash ./deb/install-prerequisite.sh
