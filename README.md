@@ -5,7 +5,7 @@ This repository contains files & folders to be reinstalled after switching/reins
 ## Steps to run
 
 ```bash
-sudo apt install curl git
+sudo apt install curl git -y
 
 git clone https://github.com/MRDGH2821/Distro-Setup ~/GitHub/Distro-Setup
 cd ~/GitHub/Distro-Setup || exit
