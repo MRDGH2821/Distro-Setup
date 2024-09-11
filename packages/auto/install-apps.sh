@@ -34,3 +34,21 @@ else
   ' >>~/.bashrc
   oh-my-posh font install Meslo
 fi
+
+## Node.js via Fast Node Manager
+
+if command -v fnm &>/dev/null; then
+  echo "Fast Node Manager is already installed. Skipping"
+else
+  curl -fsSL https://fnm.vercel.app/install | bash
+
+  # shellcheck disable=SC1090
+  source ~/.bashrc
+fi
+
+if command -v node &>/dev/null; then
+  echo "Node.js is already installed. Skipping"
+else
+  # download and install Node.js
+  fnm use --install-if-missing 20
+fi
