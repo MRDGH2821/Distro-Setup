@@ -85,7 +85,7 @@ fi
 # Post install
 
 ## Disable AppArmor for firefox
-sudo aa-disable /etc/apparmor.d/usr.bin.firefox
+sudo aa-disable /etc/apparmor.d/*firefox*
 
 ## Allow management of Docker as a non-root user
 sudo groupadd docker
